@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\caption{Cost of each design on a laptop CPU (\BenchCPU{}, batch 1, 640$\times$512 input, FP32, median of 100 runs).}\label{tab:eff}
+\setlength{\tabcolsep}{2.5pt}\footnotesize
+\begin{tabular}{@{}lcccccc@{}}\toprule
+& Params & & \multicolumn{2}{c}{Latency (ms)} & & ONNX \\ \cmidrule(lr){4-5}
+Model & (M) & GFLOPs & PyTorch & ORT & FPS & (MB) \\ \midrule
+Unimodal & 3.006 & 6.47 & 58.1 & 35.4 & 28 & 11.7 \\
+Early fusion & 3.006 & 6.49 & 65.3 & 37.1 & 27 & 11.7 \\
+Late fusion$^\ast$ &6.012 & 12.93 & -- & 70.7 & 14 & 23.3 \\
+\bottomrule\end{tabular}
+\\[2pt]{\scriptsize $^\ast$two unimodal detectors run sequentially; box-fusion time excluded.}
+\end{table}

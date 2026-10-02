@@ -1,0 +1,14 @@
+\begin{table}[t]\centering\caption{Detection on the LLVIP test set (clean inputs). Mean$\pm$std over \NSeeds{} seeds; 95\% CI from a paired image-level bootstrap.}\label{tab:main}
+\setlength{\tabcolsep}{3pt}\footnotesize
+\begin{tabular}{@{}lccccc@{}}\toprule
+Input & Ch. & AP$_{50}$ & 95\% CI & AP$_{75}$ & AP \\ \midrule
+RGB & 3 & -- & -- & -- & -- \\
+Grayscale & 3$^\dagger$ & -- & -- & -- & -- \\
+Thermal (LWIR) & 3$^\dagger$ & -- & -- & -- & -- \\
+Early fusion (RGB-T, paired) & 4 & -- & -- & -- & -- \\
+Early fusion (RGB-T, unpaired) & 4 & -- & -- & -- & -- \\
+Late fusion (WBF) & 3+3 & -- & -- & -- & -- \\
+Late fusion (NMS) & 3+3 & -- & -- & -- & -- \\
+\bottomrule\end{tabular}
+\\[2pt]{\scriptsize $^\dagger$single-channel image replicated to 3 channels.}
+\end{table}

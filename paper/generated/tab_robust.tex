@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\caption{AP$_{50}$ under synthetic test-time degradation of one sensor (mean over seeds). A model is only affected by degradations of the sensors it uses.}\label{tab:robust}
+\footnotesize
+\begin{tabular}{@{}lccccccc@{}}\toprule
+& & \multicolumn{4}{c}{Visible camera degraded} & \multicolumn{2}{c}{Thermal camera degraded} \\ \cmidrule(lr){3-6}\cmidrule(lr){7-8}
+Input & Clean & Low-light & Fog & Noise & Off & Noise & Off \\ \midrule
+RGB & -- & -- & -- & -- & -- & -- & -- \\
+Grayscale & -- & -- & -- & -- & -- & -- & -- \\
+Thermal (LWIR) & -- & -- & -- & -- & -- & -- & -- \\
+Early fusion (RGB-T, paired) & -- & -- & -- & -- & -- & -- & -- \\
+Early fusion (RGB-T, unpaired) & -- & -- & -- & -- & -- & -- & -- \\
+Late fusion (WBF) & -- & -- & -- & -- & -- & -- & -- \\
+Late fusion (NMS) & -- & -- & -- & -- & -- & -- & -- \\
+\bottomrule\end{tabular}
+\end{table*}
